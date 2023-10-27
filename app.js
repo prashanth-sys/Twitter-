@@ -48,7 +48,7 @@ app.post("/register/", async (request, response) => {
           '${name}',
           '${gender}'
       );`;
-    if (password.length < 5) {
+    if (password.length < 6) {
       response.status(400);
       response.send("Password is too short");
     } else {
